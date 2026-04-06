@@ -11,6 +11,17 @@ const Banner = () => {
       className="max-w-[50%] rounded-2xl "
     />
     <div>
+        <div className="flex items-center">
+      <button className="flex items-center gap-2.5 px-5 py-2 rounded-full bg-[#E8EDFF] border border-[#D1D9FF] hover:bg-[#DEE5FF] ">
+        
+        
+       
+      
+        <span className="text-[#7C3AED] font-semibold text-sm sm:text-base">
+         <i class="fa-solid fa-circle  "></i> New: AI-Powered Tools Available
+        </span>
+      </button>
+    </div>
       <h1 className="text-5xl font-bold text-[#101727]">Supercharge Your <br />
 Digital Workflow</h1>
       <p className="py-6">
@@ -26,6 +37,9 @@ Explore Products
     </div>
   </div>
 </div>  
+    <div className='bg-gradient-to-r font-bold from-[#4f39f6] to-[#9514fa]'>
+
+    </div>
         </div>
     );
 };
