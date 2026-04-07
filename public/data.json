@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "AI Content Writer",
+    "description": "Generate high-quality blog posts and social media content in seconds.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Unlimited AI Words", "SEO Optimization", "20+ Languages"],
+    "icon": "✍️"
+  },
+  {
+    "id": 2,
+    "name": "Code Assistant Pro",
+    "description": "Real-time code suggestions and bug fixing for developers.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["React & Node Support", "VS Code Extension", "Private Repos"],
+    "icon": "💻"
+  },
+  {
+    "id": 3,
+    "name": "Enterprise Suite",
+    "description": "Full-scale business automation for large teams and agencies.",
+    "price": 499,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Priority Support", "Custom Branding", "Advanced Analytics"],
+    "icon": "🏢"
+  },
+  {
+    "id": 4,
+    "name": "Image Gen AI",
+    "description": "Create stunning visuals from simple text prompts using AI.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Hot",
+    "tagType": "popular",
+    "features": ["4K Resolution", "Commercial Rights", "Batch Download"],
+    "icon": "🎨"
+  },
+  {
+    "id": 5,
+    "name": "SEO Optimizer",
+    "description": "Rank your website on the first page of Google effortlessly.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "Top Rated",
+    "tagType": "best-seller",
+    "features": ["Keyword Research", "Backlink Audit", "Daily Reports"],
+    "icon": "🚀"
+  },
+  {
+    "id": 6,
+    "name": "Chatbot Builder",
+    "description": "Build custom AI chatbots for your website without coding.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "Sale",
+    "tagType": "new",
+    "features": ["WhatsApp Integration", "Lead Generation", "24/7 Active"],
+    "icon": "🤖"
+  }
+]

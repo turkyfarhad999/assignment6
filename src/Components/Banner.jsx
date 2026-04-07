@@ -37,8 +37,19 @@ Explore Products
     </div>
   </div>
 </div>  
-    <div className='bg-gradient-to-r font-bold from-[#4f39f6] to-[#9514fa]'>
-
+    <div className='bg-gradient-to-r font-bold from-[#4f39f6] to-[#9514fa] grid grid-cols-3 text-white'>
+       <div className='flex justify-center items-center flex-col py-14'>
+        <h1 className='text-6xl'>50k+</h1>
+        <p className='text-2xl'>Active Users</p>
+       </div>
+       <div className='flex justify-center items-center flex-col'>
+        <h1 className='text-6xl'>200k+</h1>
+        <p className='text-2xl'>Premium Tools</p>
+       </div>
+       <div className='flex justify-center items-center flex-col'>
+        <h1 className='text-6xl'>4.9</h1>
+        <p className='text-2xl'>Rating</p>
+       </div>
     </div>
         </div>
     );
