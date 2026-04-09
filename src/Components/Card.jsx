@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // {
 //     "id": 6,
 //     "title": "Social Media Content Kit",
@@ -10,14 +10,18 @@ import React from 'react';
 //     "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"]
 //   }
  
-const Card = ({card,setTemp,temp,sum,setSum}) => {
-    
+const Card = ({card,setTemp,temp,sum,setSum,setCount}) => {
+    const [buy,setBuy]=useState(true)
     const buyNow=()=>{
      const arr=[...temp,card]
       setTemp(arr)
       console.log(card.price)
       setSum(sum+Number(card.price))
       console.log(sum)
+      setBuy(false)
+      
+      setCount(temp.length+1)
+      
       
     }
     return (
@@ -33,9 +37,9 @@ const Card = ({card,setTemp,temp,sum,setSum}) => {
                {card.features.map(da=><li><i class="fa-solid fa-check" style={{color: "#16f522"}}></i>{da}</li>)}
 
                </ul>
-                 <button onClick={()=>{
+                 <button disabled={!buy} onClick={()=>{
                     buyNow()
-                 }} className='btn btn-primary w-[100%] rounded-3xl'> buy now</button>
+                 }} className={`btn btn-primary w-[100%] rounded-3xl ${buy===false?'bg-green-600 text-white':'btn-primary'}`}>{buy===true?"Buy Now":"Added to Cart"}</button>
             </div>
         </div>
     );

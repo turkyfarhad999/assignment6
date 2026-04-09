@@ -2,12 +2,13 @@ import React, { use, useState } from 'react';
 import Card from './Card';
 import Cart from './Cart';
 
-const Cardholder = ({data}) => {
+const Cardholder = ({data,setCount}) => {
     const cards=use(data);
     const [option , setOption]=useState(true)
     const [temp,setTemp]=useState([]);
     const [sum,setSum]=useState(0);
-   
+    
+
    
     return (
         <div className='max-w-[80%] mx-auto py-6 space-y-5'>
@@ -18,7 +19,7 @@ to boost your productivity and creativity.</p>
     <button onClick={()=>{setOption(true)}} className={`btn rounded-l-[40px] ${option===true?'btn-primary':'btn-active'}`} >Products</button>
     <button onClick={()=>{setOption(false)}} className={`btn rounded-r-[40px] ${option===false?'btn-primary':'btn-active'}`}>Carts ({temp.length})</button>
 </div>
-          <div className='grid grid-cols-3 gap-4'>  {option===true?cards.map(card=><Card card={card} setTemp={setTemp} temp={temp} setSum={setSum} sum={sum}></Card>):(<Cart temp={temp} setSum={setSum} sum={sum} setTemp={setTemp}></Cart>)}</div>
+          <div className='grid md:grid-cols-3 gap-4'>  {option===true?cards.map(card=><Card setCount={setCount} card={card} setTemp={setTemp} temp={temp} setSum={setSum} sum={sum}></Card>):(<Cart temp={temp} setSum={setSum} sum={sum} setTemp={setTemp} setCount={setCount} ></Cart>)}</div>
         </div>
     );
 };

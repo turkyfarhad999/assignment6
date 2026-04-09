@@ -1,10 +1,10 @@
 import React from 'react';
 import Empty from './Empty';
 import NotEmpty from './NotEmpty';
-const Cart = ({temp,sum,setSum,setTemp}) => {
+const Cart = ({temp,sum,setSum,setTemp,setCount}) => {
     return (
-        <div className='col-span-3'>
-            {temp.length!==0?<NotEmpty temp={temp} setSum={setSum} sum={sum} setTemp={setTemp}></NotEmpty>:<Empty></Empty>}
+        <div className='md:col-span-3'>
+            {temp.length!==0?<NotEmpty temp={temp} setSum={setSum} sum={sum} setTemp={setTemp} setCount={setCount}></NotEmpty>:<Empty></Empty>}
         </div>
     );
 };

@@ -12,10 +12,10 @@ function App() {
 
   return (
     <>
-    <Navbar></Navbar>
+    <Navbar count={count}></Navbar>
     <Banner></Banner>
     <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-     <Cardholder data={data}></Cardholder>
+     <Cardholder data={data} setCount={setCount}></Cardholder>
     </Suspense>
     </>
   )

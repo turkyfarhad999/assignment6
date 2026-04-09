@@ -1,9 +1,9 @@
 import { ShoppingBag, ShoppingCart } from 'lucide';
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({count}) => {
     return (
-        <div className='shadow-sm'>
+        <div className='shadow-sm '>
             <div className='max-w-[80%] mx-auto'>
                 <div className="navbar bg-base-100 ">
   <div className="navbar-start">
@@ -42,9 +42,12 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end space-x-2">
-     <i class="fa-solid fa-cart-shopping"></i> 
+   <div className='flex items-center relative'>
+     <i class="fa-solid fa-cart-shopping text-2xl"></i> 
+     <p className='absolute -top-3 left-4 bg-black text-white px-2 rounded-[50%]'>{count}</p>
+   </div>
      <a href="" className='font-semibold'>Login</a>
-    <a className="btn bg-gradient-to-r font-bold from-[#4f39f6] to-[#9514fa] text-white rounded-4xl">Get Started</a>
+    <a className="hidden md:flex btn bg-gradient-to-r font-bold from-[#4f39f6] to-[#9514fa] text-white rounded-4xl">Get Started</a>
   </div>
 </div>
             </div>

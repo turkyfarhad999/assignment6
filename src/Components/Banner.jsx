@@ -37,7 +37,7 @@ Explore Products
     </div>
   </div>
 </div>  
-    <div className='bg-gradient-to-r font-bold from-[#4f39f6] to-[#9514fa] grid grid-cols-3 text-white'>
+    <div className='bg-gradient-to-r font-bold from-[#4f39f6] to-[#9514fa] grid md:grid-cols-3 text-white'>
        <div className='flex justify-center items-center flex-col py-14'>
         <h1 className='text-6xl'>50k+</h1>
         <p className='text-2xl'>Active Users</p>

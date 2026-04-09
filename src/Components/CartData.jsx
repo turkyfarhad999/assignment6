@@ -1,12 +1,13 @@
 import React from 'react';
 
-const CartData = ({cartData,sum,setSum,setTemp,temp}) => {
+const CartData = ({cartData,sum,setSum,setTemp,temp,setCount}) => {
     
     const removeBtn=()=>{
         setSum(sum-Number(cartData.price))
         const arr=temp.filter(i=>i.title!==cartData.title)
         setTemp(arr);
         console.log(temp);
+        setCount(arr.length)
 
     }
   
