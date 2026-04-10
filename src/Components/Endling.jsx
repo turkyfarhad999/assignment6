@@ -85,7 +85,7 @@ const Endling = () => {
         </div>
       </section>
  
-      {/* Pricing Section */}
+     
       <section className="py-20 px-6 text-center bg-white">
         <h2 className="text-4xl font-bold mb-2">Simple, Transparent Pricing</h2>
         <p className="text-gray-500 mb-12 text-sm">Choose the plan that fits your needs. Upgrade or cancel anytime.</p>
@@ -132,7 +132,7 @@ const Endling = () => {
         </div>
       </section>
  
-      {/* CTA Banner */}
+    
       <section className="bg-gradient-to-br from-violet-900 to-violet-600 py-20 px-6 text-center text-white">
         <h2 className="text-4xl font-bold mb-3">Ready To Transform Your Workflow?</h2>
         <p className="text-violet-200 mb-8 text-sm">
@@ -150,7 +150,7 @@ const Endling = () => {
         <p className="text-violet-300 text-xs mt-5">14-day free trial • No credit card required • Cancel anytime</p>
       </section>
  
-      {/* Footer */}
+    
       <footer className="bg-gray-950 text-gray-400 py-14 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 mb-10">
           <div className="col-span-2 md:col-span-1">
