@@ -5,10 +5,10 @@ import './App.css'
 import Banner from './Components/Banner'
 import Cardholder from './Components/Cardholder'
 import Endling from './Components/Endling'
-
+const data=fetch('data.json').then(res=>res.json())
 function App() {
   const [count, setCount] = useState(0)
-  const data=fetch('data.json').then(res=>res.json())
+  
   
 
   return (
